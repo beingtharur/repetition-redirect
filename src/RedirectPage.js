@@ -33,6 +33,7 @@
 
 
 
+
 import React, { useEffect } from 'react';
 
 const RedirectPage = () => {
@@ -52,7 +53,7 @@ const RedirectPage = () => {
                     const endTime = params.get('endTime');
 
                     if (query && startTime && endTime) {
-                        const redirectURL = `https://repetition-video.vercel.app/?query=${query}&startTime=${startTime}&endTime=${endTime}`;
+                        const redirectURL = `repetition://Video?query=${query}&startTime=${startTime}&endTime=${endTime}`;
                         window.location.href = redirectURL;
                     }
                 }
