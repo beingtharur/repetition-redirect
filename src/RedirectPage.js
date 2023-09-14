@@ -29,7 +29,7 @@ const RedirectPage = () => {
     return null; // No need to render anything for this component
 };
 
-// export default RedirectPage;
+export default RedirectPage;
 
 
 
